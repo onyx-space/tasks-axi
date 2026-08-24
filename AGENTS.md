@@ -78,7 +78,7 @@ Any argv shape other than exactly one version flag falls through to `runAxiCli`,
 
 - `pnpm build` (tsc), `pnpm test` (vitest, `test/` mirrors `src/`), `pnpm lint` (eslint), `pnpm run build:skill -- --check` (the generated `skills/tasks-axi/SKILL.md` is built from `DESCRIPTION` + `TOP_HELP` and must not drift — CI runs the check).
 - `skills/tasks-axi/SKILL.md` is generated — regenerate with `pnpm run build:skill` after changing the description or top-level help; never hand-edit it.
-- This repo is no-mistakes-gated; ship through `/no-mistakes`.
+- This repo is pr-axi-gated; ship through `pr-axi raise` (same-repo onyx-space/tasks-axi) or `pr-axi raise --upstream` (parent kunchenguid/tasks-axi); see `~/.agents/skills/pr-axi/SKILL.md`.
 
 ### Release & packaging (mirrors the `*-axi` siblings)
 
